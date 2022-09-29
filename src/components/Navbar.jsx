@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="user">
-        <img src={AvatarImg} alt="User Image" />
+        <img src={AvatarImg} alt="User" />
         <span>
           User Name
           <small>Online</small>

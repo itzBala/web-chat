@@ -241,6 +241,12 @@
 
         .chat {
             flex: 2;
+
+            .chatInfo {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
         }
     }
 }
