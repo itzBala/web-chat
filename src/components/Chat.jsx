@@ -1,18 +1,31 @@
-import {TbVideo} from 'react-icons/tb'
-import {FiUserPlus} from 'react-icons/fi'
-import {CgMore} from 'react-icons/cg'
+import Messages from './Messages'
+import Input from './Input'
+
+import AvatarImg from '../images/avatar.png'
+
+import {BsFillCameraVideoFill} from 'react-icons/bs'
+import {ImUserPlus} from 'react-icons/im'
+import {FiMoreVertical} from 'react-icons/fi'
 
 const Chat = () => {
   return (
     <div className="chat">
       <div className="chatInfo">
-        <span>Friend</span>
-        <div className="chatIcons">
-          <TbVideo/>
-          <FiUserPlus/>
-          <CgMore/>
+        <div className="chatWith">
+          <img src={AvatarImg} alt="Friend" />
+          <span>
+            User Name
+            <small>Online</small>
+          </span>
+        </div>
+        <div className="chatOptions">
+          <BsFillCameraVideoFill className='chatIcon'/>
+          <ImUserPlus className='chatIcon'/>
+          <FiMoreVertical className='chatIcon'/>
         </div>
       </div>
+      <Messages/>
+      <Input/>
     </div>
   )
 }
